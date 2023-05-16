@@ -61,9 +61,14 @@ body{
 }
 
 .text{
-    text-align: center;
-    position: relative;
-    bottom: 185px;
+    position: absolute;
+    left:53%;
+    transform: translateX(-50%);
+    bottom:53%;
+    width:400px;
+    color:white;
+    transition: all 1s ease;
+    
 }
 h4{
     color: #b5b5b5;
@@ -95,6 +100,11 @@ h4{
     position: relative;
     justify-content: center;
     bottom: 80px;
+}
+
+.button-flex > *
+{
+    border-radius: 5px;
 }
 
 .portfolio-btn {
@@ -189,4 +199,46 @@ h4{
     top: 35%;
     position: relative;
     color: white;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    gap:20px;
+    align-items: center;
+    position: absolute;
+    bottom:0%;
+    left:50%;
+    transform: translateX(-50%);
+}
+
+.github-link{
+    background-image: url(images/github.png);
+    width: 40px;
+    height: 35px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    right:3px;
+    bottom:3px;
+}
+
+.contact-link {
+    cursor: pointer;
+    color:white
+
+}
+.contact-link:hover{
+    text-decoration: underline;
+}
+
+.linkedin-link{
+    background-image: url(images/linkedin.webp);
+    width: 50px;
+    height: 50px;
+}
+
+
+.intro-dissapear {
+    transition: all 1s;
 }

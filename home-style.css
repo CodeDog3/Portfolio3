@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+body{
+    height: 100%;
+    background-color: black;
+}
+
+.intro-screen{
+    color: white;
+    position: absolute;
+    
+    left: 50%;
+    transform: translateX(-50%);
+    top: 35%;
+}
+.image-topper {
+    width: 150px;
+    height: 150px;
+    border-radius: 100px;
+    border : 3px solid white;
+    position: relative;
+    margin: auto;
+    bottom: 260px;
+}
+.inner-image {
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    background-image: url(images/image-topper.png);
+    background-size: cover;
+}
+.vert-bar1, .vert-bar2 {
+    position: relative;
+    width: 2px;
+    height: 120px;
+    background-color:white
+}
+
+.vert-bar1 {
+    margin: auto;
+    bottom: 260px;
+    background-color: white;
+}
+
+.hor-bar1, .hor-bar2 {
+    position: relative;
+    width: 1024px;
+    height:2px;
+    background-color: white;
+}
+
+.hor-bar1 {
+    bottom: 260px;
+}
+
+.text{
+    text-align: center;
+    position: relative;
+    bottom: 185px;
+}
+h4{
+    color: #b5b5b5;
+}
+
+.hor-bar2 {
+    bottom: 100px;
+}
+
+.vert-bar2 {
+    margin: auto;
+    bottom: 100px;
+    background-color: white;
+}
+
+.small-hor-bar1 {
+    width: 420px;
+    height: 2px;
+    background-color: white;
+    position: relative;
+    margin: auto;
+    bottom: 100px;
+}
+
+.button-flex{
+    display: flex;
+    gap:20px;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+    bottom: 80px;
+}
+
+.portfolio-btn {
+    width: 200px;
+    height: 80px;
+    border: 2px solid white;
+    cursor: pointer;
+    
+}
+.portfolio-btn:hover{
+    background-color: #03e9f4;
+    box-shadow: 0 0 5px #03e9f4,
+                0 0 25px #03e9f4,
+                0 0 50px #03e9f4,
+                0 0 200px #03e9f4;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+}
+
+.portfolio-btn h3 {
+    height:50%;
+    text-align: center;
+    top: 35%;
+    position: relative;
+    color: white;
+}
+
+.button-flex a {
+    text-decoration: none;
+    width: 200px;
+    height: 80px;
+    border: 2px solid white;
+}
+
+.button-flex a:hover{
+    background-color: #e3fc07;
+    box-shadow: 0 0 5px #e3fc07,
+                0 0 25px #e3fc07,
+                0 0 50px #e3fc07,
+                0 0 200px #e3fc07;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+}
+
+.button-flex a h3 {
+    height:50%;
+    text-align: center;
+    top: 35%;
+    position: relative;
+    color: white;
+}
+
+.education-btn {
+    width: 200px;
+    height: 80px;
+    border: 2px solid white;
+    cursor: pointer;
+}
+
+.education-btn:hover{
+    background-color: #ff5de9;
+    box-shadow: 0 0 5px #ff5de9,
+                0 0 25px #ff5de9,
+                0 0 50px #ff5de9,
+                0 0 200px #ff5de9;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+}
+
+.education-btn h3 {
+    height:50%;
+    text-align: center;
+    top: 35%;
+    position: relative;
+    color: white;
+}

@@ -11,7 +11,6 @@ body{
 .intro-screen{
     color: white;
     position: absolute;
-    
     left: 50%;
     transform: translateX(-50%);
     top: 35%;
@@ -62,13 +61,16 @@ body{
 
 .text{
     position: absolute;
-    left:53%;
+    left:50%;
     transform: translateX(-50%);
     bottom:53%;
     width:400px;
     color:white;
-    transition: all 1s ease;
+    transition: all 1s;
     
+}
+.text {
+    text-align: center;
 }
 h4{
     color: #b5b5b5;
@@ -210,6 +212,7 @@ h4{
     bottom:0%;
     left:50%;
     transform: translateX(-50%);
+    transition: all 1s;
 }
 
 .github-link{

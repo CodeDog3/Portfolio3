@@ -1,0 +1,79 @@
+.education-screen{
+    height: 790px;
+    width: 900px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    display: none;
+    opacity: 0;
+    transition: all 1s;
+}
+
+.education-wrapper > h1 {
+    text-align: center;
+    margin-top: 120px;
+}
+
+.education-list li {
+    text-align: left;
+    margin-bottom: 5px;
+    font-size: 2rem;
+    
+}
+.education-list{
+    margin-top: 20px;
+    list-style-type: none;
+    color: whitesmoke;
+    position: relative;
+    display: inline-block;
+    width:60%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.education-wrapper h2 {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.skills{
+    margin-top: 20px;
+}
+.skills-flex{
+    display: flex;
+    flex-wrap: wrap;
+    width: 60%;
+    position: relative;
+    left:50%;
+    transform: translateX(-50%);
+    justify-content: center;
+    gap: 20px;
+}
+
+
+.skill1, .skill2, .skill3, .skill4, .skill5, 
+.skill6, .skill7, .skill8, .skill9, .skill10{
+    background-color: white;
+    width: 90px;
+    height: 90px;
+    border-radius: 3rem;
+
+} 
+
+.skill1 img, .skill2 img, .skill3 img, .skill4 img, .skill5 img, 
+.skill6 img, .skill7 img, .skill8 img, .skill9 img, .skill10 img {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+}
+
+.skill7 img{
+    width: 100px;
+    height: 70px;
+}
+
+

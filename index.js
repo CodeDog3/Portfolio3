@@ -142,9 +142,9 @@ back.forEach(elem =>{
 
     elem.addEventListener("click", ()=>{
     
-        // footer.style.opacity = '0';
         education.style.opacity = '0';
         portfolio.style.opacity = '0';
+        contact.style.opacity = '0';
     
         intro.forEach(elem =>{
             elem.style.opacity = '1';

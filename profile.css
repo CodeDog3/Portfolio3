@@ -1,7 +1,13 @@
+:root {
+  --card-bg: #1a1917;
+  --card-text: #fff;
+  --border-radius: 0.5rem;
+}
+
 .profile-screen{
     display: none;
     visibility: hidden;
-    height: 1500px;
+    height: 1900px;
     width: 900px;
     position: relative;
     left: 50%;
@@ -193,38 +199,41 @@
     left:45%;
     
 }
-:root {
-    --card-bg: #1a1917;
-    --card-text: #fff;
-    --border-radius: 0.5rem;
-  }
-  .other-projects {
+.other-projects-flex{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  justify-content: center;
+  gap:20px;
+}
+
+.other-projects {
     display: grid;
     place-items: center;
-    min-height: 100vh;
+    min-height: 40vh;
     font-family: 'Inter', sans-serif;
   }
-  .other-projects .card {
+.other-projects .card {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 1rem;
-    max-width: 400px;
+    max-width: 350px;
     width: calc(100% - 4rem);
   }
-  .other-projects .card .price,
-  .other-projects .card .details {
+.other-projects .card .price,
+.other-projects .card .details {
     background: var(--card-bg);
     color: var(--card-text);
     padding: 1rem;
   }
-  .other-projects .card .price,
-  .other-projects .card .price span {
+.other-projects .card .price,
+.other-projects .card .price span {
     position: relative;
   }
-  .other-projects .card .price:before,
-  .other-projects .card .price span:before,
-  .other-projects .card .price.price:after,
-  .other-projects .card .price span.price:after {
+.other-projects .card .price:before,
+.other-projects .card .price span:before,
+.other-projects .card .price.price:after,
+.other-projects .card .price span.price:after {
     content: '';
     position: absolute;
     bottom: 100%;
@@ -233,19 +242,19 @@
     border-radius: 100%;
     box-shadow: -0.5rem 0.5rem black;
   }
-  .other-projects .card .image {
-    height: 300px;
+.other-projects .card .image {
+    height: 200px;
     grid-column: 1/3;
     grid-row: 1/3;
     border-radius: var(--border-radius);
     background-size: cover;
     background-position: center;
   }
-  .other-projects .card .image:before {
+.other-projects .card .image:before {
     bottom: 0;
     transform: translateX(50%);
   }
-  .other-projects .card .price {
+.other-projects .card .price {
     display: grid;
     grid-column: 1;
     grid-row: 2;
@@ -257,7 +266,7 @@
     border-radius: var(--border-radius) var(--border-radius) 0 0;
     text-align: center;
   }
-  .other-projects .card .price span {
+.other-projects .card .price span {
     position: relative;
     top: 1rem;
     background: #fff;
@@ -265,16 +274,16 @@
     padding: 1rem 0.5rem;
     border-radius: var(--border-radius);
   }
-  .other-projects .card .price span:before {
+.other-projects .card .price span:before {
     bottom: 0;
     right: 0;
     transform: translate(300%, -100%);
   }
-  .other-projects .card .price:before {
+.other-projects .card .price:before {
     bottom: calc(100% + 1rem);
     left: 0;
   }
-  .other-projects .card .price.price:after {
+.other-projects .card .price.price:after {
     left: unset;
     right: 0;
     top: 100%;
@@ -283,16 +292,16 @@
     height: 2rem;
     box-shadow: -1rem 1rem var(--card-bg);
   }
-  .other-projects .card .details {
+.other-projects .card .details {
     grid-column: span 2;
     grid-row: 3;
     font-size: 1.25rem;
     border-radius: 0 var(--border-radius) var(--border-radius) var(--border-radius);
   }
-  .other-projects .card .details p:first-child {
+.other-projects .card .details p:first-child {
     margin-top: 0;
   }
-  .other-projects .card .details p:last-child {
+.other-projects .card .details p:last-child {
     margin-bottom: 0;
   }
   

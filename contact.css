@@ -1,0 +1,80 @@
+
+.contact-wrapper{
+    height: 650px;
+    opacity: 0;
+    display: none;
+    transition: all 1s;
+    
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+
+.contact{
+    color: white;
+    margin-top: 250px;
+}
+
+.contact-info{
+    display: grid;
+    height: 400px;
+    width:35%;
+    grid-template-columns: repeat(30,1fr);
+    grid-template-rows: repeat(30,1fr);
+}
+
+
+.firstname, #name {
+    width: 100%;
+    height: 100%;
+    grid-column: 2/15;
+    grid-row: 2/5;
+}
+.lastname, #last-name {
+    width: 100%;
+    height: 100%;
+    grid-column: 16/29;
+    grid-row: 2/5;
+
+
+}
+.email, #email {
+    width: 100%;
+    height: 100%;
+    grid-column: 2/29;
+    grid-row: 7/10;
+
+
+}
+.message, #message {
+    width: 100%;
+    height: 100%;
+    grid-column: 2/29;
+    grid-row: 12/25;
+
+
+}
+.submit, #submit {
+    width: 100%;
+    height: 100%;
+    grid-column: 13/18;
+    grid-row: 27/30;
+    border-radius: 5px;
+    background-color: #8b858533;
+
+}
+
+.firstname, .message, .email, .lastname{
+    font-size: 12px;
+    
+}
+.contact form input,
+.contact form textarea {
+    border: 2px solid grey;
+    border-radius: 5px;
+}
+

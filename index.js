@@ -6,6 +6,7 @@ const portfolio = document.querySelector(".profile-screen");
 const text = document.querySelector(".text");
 const footer = document.querySelector(".footer");
 const education = document.querySelector('.education-screen');
+const contact = document.querySelector('.contact-wrapper');
 
 
 portfolioBtn.addEventListener("click", ()=>{
@@ -94,6 +95,12 @@ educationBtn.addEventListener("click", ()=>{
 
 contactBtn.addEventListener("click", ()=>{
 
+    footer.style.opacity = '0';
+
+    setTimeout(()=>{
+        footer.style.display = 'none';
+    },1000)
+
     intro.forEach(elem =>{
         elem.style.opacity = '0';
 
@@ -101,6 +108,33 @@ contactBtn.addEventListener("click", ()=>{
             elem.style.display = 'none';
         },1000)      
     });
+
+    education.style.opacity = '0';
+    portfolio.style.opacity = '0';
+
+    setTimeout(()=>{
+        education.style.display = 'none';
+        portfolio.style.display = 'none';
+
+    },1000)
+
+
+    setTimeout(()=>{
+        contact.style.display = 'block';
+    },2500);
+
+    setTimeout(()=>{
+
+        contact.style.opacity = '1';
+        footer.style.position = 'relative'
+        footer.style.display = 'flex';
+        footer.style.opacity = '1';
+
+    },2600);
+
+
+
+
 
     setTimeout(()=>{
         text.style.bottom = '90%';

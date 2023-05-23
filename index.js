@@ -7,7 +7,7 @@ const text = document.querySelector(".text");
 const footer = document.querySelector(".footer");
 const education = document.querySelector('.education-screen');
 const contact = document.querySelector('.contact-wrapper');
-
+const back = document.querySelectorAll('.back');
 
 portfolioBtn.addEventListener("click", ()=>{
 
@@ -132,12 +132,56 @@ contactBtn.addEventListener("click", ()=>{
 
     },2600);
 
-
-
-
-
     setTimeout(()=>{
         text.style.bottom = '90%';
     },1000)
 })
+
+
+back.forEach(elem =>{
+
+    elem.addEventListener("click", ()=>{
+    
+        // footer.style.opacity = '0';
+        education.style.opacity = '0';
+        portfolio.style.opacity = '0';
+    
+        intro.forEach(elem =>{
+            elem.style.opacity = '1';
+    
+            setTimeout(()=>{
+                elem.style.display = 'block';
+
+            },2000)      
+        });
+    
+    
+    
+        setTimeout(()=>{
+            education.style.display = 'none';
+            portfolio.style.display = 'none';
+            contact.style.display = 'none';
+            footer.style.position = 'absolute';
+    
+        },1000);
+    
+
+        setTimeout(()=>{
+    
+            intro.style.opacity = '1';
+            footer.style.position = 'relative'
+            footer.style.display = 'flex';
+            footer.style.opacity = '1';
+            
+    
+        },2600);
+    
+    
+        setTimeout(()=>{
+            text.style.bottom = '53%';
+        },1000)
+    })
+
+});
+
 

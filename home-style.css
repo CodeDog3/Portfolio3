@@ -245,3 +245,20 @@ h4{
 .intro-dissapear {
     transition: all 1s;
 }
+
+
+.go-back h3{
+    font-size: 20px;
+    display: inline-block;
+    color: grey;
+    cursor: pointer;
+    position: relative;
+    left:25%;
+    transform: translateX(-50%);
+    margin-top: 30px;
+    z-index: 5;
+}
+
+.back{
+    z-index: 6;
+}

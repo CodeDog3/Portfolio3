@@ -147,10 +147,11 @@ back.forEach(elem =>{
         contact.style.opacity = '0';
     
         intro.forEach(elem =>{
-            elem.style.opacity = '1';
+            elem.style.display = 'block';
+            
     
             setTimeout(()=>{
-                elem.style.display = 'block';
+                elem.style.opacity = '1';
 
             },2000)      
         });
